@@ -2,48 +2,62 @@
 //Jenney Grover, SDI 1305, project 2
 
 
+var a = "This is the song that never ends.";
+var b = "It goes on and on my friend.";
+var c = "Some people started sining it,";
+var d = "not knowing when it ends.";
+var e = "And they'll continue singing it,";
+var f = "FOREVER just because!!!";
+var songLambChop = [a, b, c, d, e, f]; 
+
+var neices = ["Holland", "Harper", "Finley"];
+var nephews = ["Laken"];
+
+var i = 0
+
+//size of flower bed
+var width;
+var height;
+var area = width * height; 
+var perimeter = ((2 * width) + (2 * height));
+var numberPlants;
+
 //practice Boolean code
-/*var p = "Jenney is the coolest aunt ever!";
+var p = "Jenney is the coolest aunt ever!";
 var q = "Jenney planted flowers with the kiddos.";
 var r = "The flowers have grown.";
+var s = "The sun is shining.";
+var t = "The flowers have been watered."; 
 
-var p = true, q = false, r = false; 
 
-// Given: (p ^ q) v r
+// procedure...welcome. 
+function welcomeAuntie(hello) {
+    if (hello === true) {
+    	console.log ("Weeee! Hi! Auntie Jenney, said " + nephews[0] + "! What are we doing to do today?");
+    } else {
+    	console.log ("I want my mommy, said " + newphews [0] + "!");
+    }
+};
 
-if ((p && q) || r) {
-	console.log("The expression is true");
-} else {
-	console.log("The expression is false");
+var auntieIsHere = welcomeAuntie(true); 
+
+//string function with concatination
+function coolAunt() {
+	var bestAunt = p + " " + q; // local variable 
+	return bestAunt;  // return string 
 }
 
-// console.log("The expression is " + ((p && q) || r)); 
-
-
-console.log("The expression is " + (p && (q || r)));
-console.log("The expression is " + ((p && !q) || (q && r)));
-console.log("The expression is " + (!(p||r)));*/
-
-// the above was from practice for Activity Boolean Logic
-
-//var annoyingInfiniteLoopSongs = var annoyingILS
-
-var annoyingILS = ["Lamb Chop", "Barney", "Skinny Marinky"];
-var childName = ["Brian", "Lee", "Kyle", "Christopher"];
-var exercise = "jumping jacks"
-
-console.log("We are going to see Lamb Chops song while we do " + exercise + "!"); 
-
-var singing = function(what, howMany)
-
-
-/*function foo(i) {
-   if (i < 0)
-      return;
-   document.writeln('begin:' + i);
-   foo(i - 1);
-   document.writeln('end:' + i);
-*/
+function theResult (flowers, sing) {
+    var activityToday = "FUN";
+        string = activityToday + "! We have ALL day today to play! What shall we start with? " + flowers + "? and then we can " + sing + " while we plant!";
+    return string
 }
-foo(3);
 
+var daysPlan = theResult("petunias", "Thunderstruck");
+
+//number function
+function areaFlowerBed(height, width) {
+		area = height * width;
+		return area; 
+	
+}
