@@ -61,3 +61,67 @@ function areaFlowerBed(height, width) {
 		return area; 
 	
 }
+
+//number function with while statement
+
+function countToTen (i) {
+	//var i = 0 
+	while (i <= 10) {
+		console.log(i);
+		i++;
+			
+	};
+	console.log("     We did this many rounds of counting.");
+	return i;  
+}
+
+var waterGallons = 41
+
+function waterFlowerBed (water, waterGallons) {
+    while (water < waterGallons) {
+        console.log("The Flowers are thirsty. They need " + water + " gallons of water.")
+        water+=5;
+    };
+    console.log("     We used this many gallons of water.");
+	return waterGallons;
+}
+
+//boolean function
+function flowersGrowing (r, s, t) {
+	var weather = (r && (s || t));
+	if (weather===true) {
+		console.log("Jenney's a great gardener and teacher! The kids love the growing flowers.");
+	} else {
+		console.log("The kids are sad that the flowers died.");
+	}
+	return weather;  
+}	
+
+
+//array function 
+function singSong (i, songLambChop) {
+	for (i; i<songLambChop.length; i++) {
+	console.log(songLambChop[i]);
+	} 
+	console.log("We sang this many lines to the song. BUT we will NOT repeat it!");
+	return i; 
+}
+
+
+//Outputs
+
+console.log("Jenney has " + neices.length + " neices and " + nephews.length + " nephew.");
+console.log(coolAunt());
+console.log(daysPlan);  
+var flowerBed = areaFlowerBed(5,7);
+var numberPlants = flowerBed / 2; 
+console.log("We need to go to the store to buy " + numberPlants + " number of plants, because our area of the flower bed is " + flowerBed + " square feet."); 
+console.log(waterFlowerBed(1, 40)); 
+console.log("Let's count to ten! Ready? Go!");
+console.log(countToTen(1));  
+console.log("I hope that the flowers will grow.");
+console.log("\"" + flowersGrowing (true, true, false) + "ly, Auntie is a great gardener!,\" said " + neices[2]);
+console.log("Okay, it is time to relax. So we're going to sing a song.");
+console.log(singSong(1, songLambChop));
+console.log("We had a fun day!");
+
